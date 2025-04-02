@@ -1,0 +1,14 @@
+program: generate_adversarial.py
+method: grid
+metric:
+  name: perturbation_norm
+  goal: minimize
+parameters:
+  lr:
+    values: [0.001, 0.01, 0.1, 0.5, 1.0, 2.0]
+  c:
+    values: [0.01, 0.1, 0.25, 0.5, 0.75, 1.0, 2.5, 5.0, 10.0, 20.0, 50.0, 100.0]
+  max_iterations:
+    values: [1000, 10000]
+  constrained_method:
+    values: [clamping, pgd, sigmoid, penalty]

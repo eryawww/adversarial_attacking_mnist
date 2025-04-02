@@ -1,0 +1,40 @@
+[project]
+name = "adversarial_attacking_mnist"
+version = "0.1.0"
+description = "PyTorch implementation of adversarial example generation from 'Intriguing Properties of Neural Networks' paper"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = ["adversarial", "deep-learning", "pytorch", "mnist", "neural-networks"]
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "numpy>=1.21.0",
+    "matplotlib>=3.4.0",
+    "wandb",
+    "pytest",
+]
+
+[project.urls]
+Homepage = "https://github.com/eryawww/adversarial_attacking_mnist"
+Repository = "https://github.com/eryawww/adversarial_attacking_mnist.git"
+"Bug Tracker" = "https://github.com/eryawww/adversarial_attacking_mnist/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
