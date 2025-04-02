@@ -5,6 +5,7 @@ This project is a PyTorch implementation of the adversarial example generation t
 The difference is in the optimized and objective function used.
 
 Original paper using the objective of below approximated using L-BFGS. We want to make the model wrongly predict $l$.
+
 $$
 \mathcal{L}(r) = c\Vert r\Vert + \text{loss}_f(x+r, l)\quad\text{Subject to } x+r\in[0, 1]^m
 $$
