@@ -29,6 +29,9 @@ Lots of ideas and improvement haven't been implemented written #TODO
   - Convolutional Neural Network (CNNet, not tested)
   - Easy to extend to other architectures
 
+- **Fast Customization through Notebook**:
+  - Edit `interactive_result.ipynb` for faster customization.
+
 ## Installation
 
 Directly clone and install through pip:
@@ -39,6 +42,23 @@ cd adversarial_attacking_mnist
 pip install -r requirements.txt
 ```
 
+## Usage
+
+1. **Generate Adversarial Examples**, download data, train mnist model, generate adversarial:
+```bash
+python main.py
+```
+
+2. **Configure Parameters**:
+Edit `hyper-parameters/hyperparameter.yaml`:
+```yaml
+lr: 0.5          # Learning rate
+c: 20            # Perturbation weight
+max_iterations: 10000  # Number of iterations
+```
+
+3. **Faster Customization using Notebooks**:
+Edit `interactive_result.ipynb` for faster customization.
 
 ## Project Structure
 
@@ -55,21 +75,6 @@ pip install -r requirements.txt
 ├── models/                    # Pretrained model weights
 ├── tests/                     # Test suite
 └── main.py                    # Entry point
-```
-
-## Usage
-
-1. **Generate Adversarial Examples**:
-```bash
-python main.py
-```
-
-2. **Configure Parameters**:
-Edit `hyper-parameters/hyperparameter.yaml`:
-```yaml
-lr: 0.5          # Learning rate
-c: 20            # Perturbation weight
-max_iterations: 10000  # Number of iterations
 ```
 
 ## Ablation
