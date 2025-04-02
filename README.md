@@ -1,4 +1,4 @@
-# Intriguing Properties of Neural Networks - Adversarial Examples
+# Adversarial Attacking MNIST - Intriguing Properties of Neural Networks Implementation
 
 This project is a PyTorch implementation of the adversarial example generation techniques described in the paper ["Intriguing Properties of Neural Networks"](https://arxiv.org/abs/1312.6199) by Szegedy et al with a slight difference. The implementation focuses on generating adversarial examples for MNIST digit classification using both supervised (targeted) and unsupervised (untargeted) approaches.
 
