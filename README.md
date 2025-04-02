@@ -31,16 +31,14 @@ Lots of ideas and improvement haven't been implemented written #TODO
 
 ## Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/intriguing-properties-of-neural-networks.git
-cd intriguing-properties-of-neural-networks
-```
+Directly clone and install through pip:
 
-2. Install dependencies:
 ```bash
+git clone https://github.com/eryawww/adversarial_attacking_mnist
+cd adversarial_attacking_mnist
 pip install -r requirements.txt
 ```
+
 
 ## Project Structure
 
