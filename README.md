@@ -2,7 +2,7 @@
 
 This project is a PyTorch implementation of the adversarial example generation techniques described in the paper ["Intriguing Properties of Neural Networks"](https://arxiv.org/abs/1312.6199) by Szegedy et al with a slight difference. The implementation focuses on generating adversarial examples for MNIST digit classification using both supervised (targeted) and unsupervised (untargeted) approaches.
 
-The difference is in the optimized and objective function used.
+The difference is in the optimization method and objective function used.
 
 Original paper using the objective of below approximated using L-BFGS. We want to make the model wrongly predict $l$.
 
